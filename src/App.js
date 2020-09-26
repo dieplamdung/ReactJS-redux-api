@@ -9,7 +9,6 @@ class App extends (Component) {
         return (
             <Router>
                 <div>
-
                     <Menu />
                     <div className="container">
                         <div className="row">
