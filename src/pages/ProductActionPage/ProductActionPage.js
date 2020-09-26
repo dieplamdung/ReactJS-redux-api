@@ -12,12 +12,14 @@ class ProductActionPage extends (Component) {
             chkbStatus: false
         }
     }
+    
     componentDidMount() {
         var { match } = this.props;
         if (match) {
             var id = match.params.id;
             this.props.onEditProduct(id);
         }
+        console.log("abc")
     }
     componentWillReceiveProps(nextProps){
         if(nextProps && nextProps.itemEditing){
